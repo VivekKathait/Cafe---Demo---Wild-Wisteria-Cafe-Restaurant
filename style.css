@@ -27,6 +27,13 @@ h1, h2 {
     padding: 0 20px; /* Prevent text touching borders */
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -44,6 +51,23 @@ h1, h2 {
     font-size: 15px;
     margin-bottom: 10px;
     opacity: 0.9;
+}
+
+.reserve-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #c59d5f;
+    color: black;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background: white;
+    transform: scale(1.05);
 }
 
 /* PREMIUM ABOUT SECTION */
@@ -299,8 +323,3 @@ footer {
         font-size: 1.2rem;
     }
 }
-
-
-
-
-
