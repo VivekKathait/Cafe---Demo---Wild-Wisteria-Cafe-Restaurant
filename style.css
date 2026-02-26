@@ -17,48 +17,33 @@ h1, h2 {
 
 /* HERO */
 .hero {
-    height: 100vh;
+    min-height: 85vh; /* Reduced from 100vh */
     background: url('images/hero.jpg') center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
+    padding: 0 20px; /* Prevent text touching borders */
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
     animation: fadeIn 2s ease-in-out;
+    max-width: 900px;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
 }
 
-.reserve-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #c59d5f;
-    color: black;
-    font-weight: 500;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.reserve-btn:hover {
-    background: white;
-    transform: scale(1.05);
+.hero p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 /* PREMIUM ABOUT SECTION */
