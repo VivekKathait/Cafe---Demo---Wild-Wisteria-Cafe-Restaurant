@@ -339,3 +339,8 @@ footer {
         opacity: 0;
     }
 }
+
+
+body {
+    cursor: none;
+}
