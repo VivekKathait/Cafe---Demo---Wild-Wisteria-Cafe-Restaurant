@@ -26,19 +26,3 @@ document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
     });
 });
 
-// SMOKE CURSOR EFFECT
-document.addEventListener("mousemove", function(e) {
-
-    const smoke = document.createElement("div");
-    smoke.classList.add("smoke");
-
-    smoke.style.left = e.clientX + "px";
-    smoke.style.top = e.clientY + "px";
-
-    document.body.appendChild(smoke);
-
-    setTimeout(() => {
-        smoke.remove();
-    }, 1000);
-
-});
