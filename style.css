@@ -17,7 +17,7 @@ h1, h2 {
 
 /* HERO */
 .hero {
-    min-height: 85vh; /* Reduced from 100vh */
+    min-height: 80vh; /* Reduced from 100vh */
     background: url('images/hero.jpg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -149,15 +149,42 @@ h1, h2 {
     opacity: 0.9;
 }
 
-/* RESPONSIVE */
+/* MOBILE NAVBAR */
 @media (max-width: 900px) {
-    .about-container {
-        grid-template-columns: 1fr;
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
         text-align: center;
     }
 
-    .about-visual {
-        margin-top: 40px;
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .nav-reserve {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.4rem;
     }
 }
 
@@ -321,5 +348,40 @@ footer {
 
     .logo {
         font-size: 1.2rem;
+    }
+}
+
+
+/* Disable hover effects on mobile */
+@media (max-width: 900px) {
+
+    .scroll-track img:hover,
+    .menu-item:hover,
+    .nav-reserve:hover,
+    .reserve-btn:hover {
+        transform: none;
+    }
+
+    .scroll-wrapper:hover .scroll-track {
+        animation-play-state: running;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .hero h1 {
+        font-size: 1.9rem;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .gallery-section h2,
+    .menu-section h2 {
+        font-size: 1.8rem;
+        padding: 0 20px;
     }
 }
