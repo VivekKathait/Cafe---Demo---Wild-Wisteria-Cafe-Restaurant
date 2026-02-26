@@ -314,3 +314,28 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+
+
+/* CUSTOM CURSOR SMOKE EFFECT */
+.smoke {
+    position: fixed;
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(197,157,95,0.7) 0%, rgba(197,157,95,0.3) 40%, rgba(197,157,95,0) 70%);
+    animation: smokeFade 1s linear forwards;
+    z-index: 9999;
+}
+
+@keyframes smokeFade {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
