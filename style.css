@@ -353,7 +353,24 @@ footer {
     }
 }
 
+.map-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: transparent;
+    color: #c59d5f;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid #c59d5f;
+    transition: 0.3s;
+}
 
+.map-btn:hover {
+    background: #c59d5f;
+    color: black;
+    transform: scale(1.05);
+}
 
 
 
